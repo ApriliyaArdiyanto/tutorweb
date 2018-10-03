@@ -6,6 +6,9 @@
     </head>
     <body>
         <nav>
+            <div class="menu-mobile">
+                <a href="#">Menu</a>
+            </div>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">PRODUCT</a></li>
@@ -15,83 +18,83 @@
             </ul>
         </nav>
 
-        <section>
-            <div>
-                <img class="image" src="img/april.jpg" alt="lucuneeh">
+        <section id="box-profile">
+            <div class="img-profile">
+                <div class="photo" style="background-image: url(img/april.jpg);"></div>
             </div>
-            <div>
+            <div class="description">
                 <h1>Apriliya Ardiyanto</h1>
                 <p>Front End Designer</p>
-                <a href="#">Contact</a>
-                <a href="#">Resume</a>
+                <a href="#" class="button
+                bg-green">Contact</a>
+                <a href="#" class="button
+                border-blue">Resume</a>
             </div>
-            <div>
-                <div>
-                    <p>Availability</p>
-                    <p>Full time</p>
+            <div class="information">
+                <div class="data">
+                    <p class="field">Availability</p>
+                    <p class="text-gray">Full time</p>
                 </div>
-                <div>
-                    <p>Age</p>
-                    <p>17</p>
+                <div class="data">
+                    <p class="field">Age</p>
+                    <p class="text-gray">17</p>
                 </div>
-                <div>
-                    <p>Location</p>
-                    <p>Cilacap,Jawa Tengah</p>
+                <div class="data">
+                    <p class="field">Location</p>
+                    <p class="text-gray">Cilacap,Jawa Tengah</p>
                 </div>
-                <div>
-                    <p>Years Experience</p>
-                    <p>6</p>
+                <div class="data">
+                    <p class="field">Years Experience</p>
+                    <p class="text-gray">6</p>
                 </div>
-                <div>
-                    <p>Email</p>
-                    <p>aprlrpl44@gmail.com</p>
+                <div class="data">
+                    <p class="field">Email</p>
+                    <p class="text-gray">aprlrpl44@gmail.com</p>
                 </div>
 
             </div>
         </section>
 
-        <section>
+        <section id="input-form">
             <form method="#" action="#">
-                <div>
+                <div class="form">
                     <label>Name</label>
-                    <input type="text" name="name" placeholder="Masukkan nama Anda">
+                    <input type="text" name="name">
                 </div>
 
-                <div>
+                <div class="form">
                     <label>Role</label>
                     <input type="text" name="role">
                 </div>
 
-                <div>
+                <div class="form">
                     <label>Availability</label>
                     <input type="text" name="availability">
                 </div>
 
-                <div>
+                <div class="form">
                     <label>Age</label>
                     <input type="number" name="age">
                 </div>
 
-                <div>
+                <div class="form">
                         <label>Location</label>
                         <input type="text" name="location">
                     </div>
     
-
-                <div>
+                <div class="form">
                     <label>Years Experience</label>
                     <input type="number" name="years">
                 </div>
     
-                <div>
+                <div class="form">
                     <label>Email</label>
                     <input type="email" name="email">
                 </div>
                 
-                <div>
-                    <input type="submit" name="submit" value="SUBMIT">
+                <div class="form">
+                    <input type="submit" name="submit" value="SUBMIT" class="bg-blue">
                 </div>
-
             </form>
         </section>
     </body>
