@@ -42,6 +42,10 @@
                     <p id="pAge" class="text-gray">17</p>
                 </div>
                 <div class="data">
+                    <p class="field">Agama</p>
+                    <p id="pAgama" class="text-gray">Islam</p>
+                </div>
+                <div class="data">
                     <p class="field">Location</p>
                     <p id="pLoc" class="text-gray">Cilacap,Jawa Tengah</p>
                 </div>
@@ -59,6 +63,7 @@
 
         <section id="input-form">
             <!-- <form method="#" action="#"> -->
+                   
                 <div class="form">
                     <label>Name</label>
                     <input id="inpName" type="text" name="name">
@@ -79,9 +84,23 @@
                     <input id="inpAge" type="number" name="age">
                 </div>
 
+                
+                <div class="form">
+                        <label>Agama</label>
+                        <select id="inpAgama" name="agama">
+                            <option value="" name="agama1">islam</option>
+                            <option value="" name="agama2">kristen</option>
+                            <option value="" name="agama3">katolik</option>
+                            <option value="" name="agama4">hindu</option>
+                            <option value="" name="agama5">buddha</option>
+                        </select>
+                    </div>
+    
+
                 <div class="form">
                         <label>Location</label>
-                        <input id="inpLoc" type="text" name="location">
+                        <!-- <input id="inpLoc" type="text" name="location"> -->
+                        <textarea id="inpLoc" type="text" name="location"></textarea>
                     </div>
     
                 <div class="form">
@@ -93,6 +112,12 @@
                     <label>Email</label>
                     <input id="inpEmail" type="email" name="email">
                 </div>
+
+                <div class="form">
+                        <label>Photo</label>
+                        <input id="inpRole" type="file" name="foto">
+                    </div>
+    
                 
                 <div class="form">
                     <input onclick="simpanForm()" type="submit" name="submit" value="SUBMIT" class="bg-blue">
@@ -117,6 +142,7 @@
                     var location = document.getElementById("pLoc").innerHTML;
                     var years = document.getElementById("pExp").innerHTML;
                     var email = document.getElementById("pEmail").innerHTML;
+                    var agama = document.getElementById("pAgama").innerHTML;
     
                     document.getElementById("inpName").value = name;
                     document.getElementById("inpRole").value = role;
@@ -125,6 +151,11 @@
                     document.getElementById("inpLoc").value = location;
                     document.getElementById("inpExp").value = years;
                     document.getElementById("inpEmail").value = email;
+                    document.getElementById("inpAgama").value = agama1;
+                    document.getElementById("inpAgama").value = agama2;
+                    document.getElementById("inpAgama").value = agama3;
+                    document.getElementById("inpAgama").value = agama4;
+                    document.getElementById("inpAgama").value = agama5;
                 }
     
                 function simpanForm(){
@@ -136,6 +167,7 @@
                     var location = document.getElementById("inpLoc").value;
                     var years = document.getElementById("inpExp").value;
                     var email = document.getElementById("inpEmail").value;
+                    var agama = document.getElementById("inpAgama").value;
 
                     document.getElementById("pName").innerHTML = name;
                     document.getElementById("pRole").innerHTML = role;
@@ -144,6 +176,11 @@
                     document.getElementById("pLoc").innerHTML = location;
                     document.getElementById("pExp").innerHTML = years;
                     document.getElementById("pEmail").innerHTML = email;
+                    document.getElementById("pAgama").innerHTML = agama1;
+                    document.getElementById("pAgama").innerHTML = agama2;
+                    document.getElementById("pAgama").innerHTML = agama3;
+                    document.getElementById("pAgama").innerHTML = agama4;
+                    document.getElementById("pAgama").innerHTML = agama5;
                 }
     
                 function showMenu(){
